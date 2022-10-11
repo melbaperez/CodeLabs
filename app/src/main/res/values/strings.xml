@@ -1,4 +1,5 @@
 <resources>
     <string name="app_name">DiceRoller</string>
     <string name="initial_message">Happy Birthday to Marisa</string>
+    <string name="roll_label">Roll</string>
 </resources>
