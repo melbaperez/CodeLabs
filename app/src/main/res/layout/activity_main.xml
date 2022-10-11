@@ -23,7 +23,7 @@
         android:layout_gravity="center_horizontal"
         android:text="@string/roll_label" />
 
-    <Button
+    <!--<Button
         android:id="@+id/countUp_button"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -35,6 +35,6 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="center_horizontal"
-        android:text="@string/reset" />
+        android:text="@string/reset" />-->
 
 </LinearLayout>
