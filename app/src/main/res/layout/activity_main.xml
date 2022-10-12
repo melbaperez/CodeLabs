@@ -103,4 +103,28 @@
         app:layout_constraintTop_toBottomOf="@+id/box_two_text"
         app:layout_constraintVertical_bias="0.0" />
 
+    <Button
+        android:id="@+id/red_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/button_red"
+        app:layout_constraintBaseline_toBaselineOf="@+id/yellow_button"
+        tools:layout_editor_absoluteX="20dp" />
+
+    <Button
+        android:id="@+id/yellow_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/button_yellow"
+        tools:layout_editor_absoluteX="127dp"
+        tools:layout_editor_absoluteY="278dp" />
+
+    <Button
+        android:id="@+id/green_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/button_green"
+        app:layout_constraintBaseline_toBaselineOf="@+id/yellow_button"
+        tools:layout_editor_absoluteX="244dp" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>
