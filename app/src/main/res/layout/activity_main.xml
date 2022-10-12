@@ -27,7 +27,8 @@
         android:hint="@string/what_is_your_nickname"
         android:inputType="textPersonName"
         android:minHeight="48dp"
-        android:textAlignment="center" />
+        android:textAlignment="center"
+        android:paddingBottom="@dimen/small_padding"/>
 
     <Button
         android:id="@+id/done_button"
@@ -46,7 +47,8 @@
         android:layout_height="wrap_content"
         android:textAlignment="center"
         android:visibility="gone"
-        android:text="" />
+        android:text=""
+        android:background="@color/colorAccent" />
 
     <ImageView
         android:id="@+id/star_image"
