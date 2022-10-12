@@ -13,6 +13,7 @@ import com.example.aboutme.databinding.ActivityMainBinding
 
 class MainActivity : AppCompatActivity() {
     private lateinit var binding: ActivityMainBinding
+    private val myName: MyName = MyName("Melba Pérez")
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         binding = DataBindingUtil.setContentView(this, R.layout.activity_main)
@@ -22,6 +23,7 @@ class MainActivity : AppCompatActivity() {
         findViewById<TextView>(R.id.nickname_text).setOnClickListener {
             updateNickname(it)
         }
+        binding.myName = myName
     }
     private fun addNickname(view: View) {
         binding.apply {
