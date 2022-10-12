@@ -2,4 +2,12 @@
     <string name="app_name">AboutMe</string>
     <string name="name">Melba</string>
     <string name="yellow_star">Yellow star</string>
+    <string name="bio">Hi, my name is Melba.
+        \n\nI love pasta.
+        \n\nI don\'t mind eating pasta a whole month
+        \nFun fact is that I really love photography.
+        \nAnd sometimes I even go to take photos.
+        \nI do love taking videos.
+        \nI usually travel and then I make videos of my travels like a summary of everything.
+        \nI spend a lot of time editing and getting new ideas to apply to my videos. I listen to many musics just to find the one that fits with my video\n</string>
 </resources>
