@@ -5,16 +5,26 @@ import android.widget.Button
 import android.widget.ImageView
 import android.widget.TextView
 import androidx.appcompat.app.AppCompatActivity
-
+const val KEY_DICE2 = "dice_image2_key"
+const val KEY_DICE1 = "dice_image1_key"
 
 class MainActivity : AppCompatActivity() {
     lateinit var diceImage : ImageView
     lateinit var diceImage2 : ImageView
+    private var diceImageId = R.drawable.empty_dice
+    private var diceImageId2 = R.drawable.empty_dice
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
         diceImage = findViewById(R.id.dice_image)
         diceImage2 = findViewById(R.id.dice_image2)
+        if (savedInstanceState != null) {
+            diceImageId = savedInstanceState.getInt(KEY_DICE1, 0)
+            diceImageId2 = savedInstanceState.getInt(KEY_DICE2, 0)
+        }
+        diceImage.setImageResource(diceImageId)
+        diceImage2.setImageResource(diceImageId2)
+
         val rollButton: Button = findViewById(R.id.roll_button)
         rollButton.setOnClickListener { rollDice() }
         /*val countUpButton: Button = findViewById(R.id.countUp_button)
@@ -25,8 +35,10 @@ class MainActivity : AppCompatActivity() {
     }
 
     private fun rollDice() {
-        diceImage.setImageResource(getRandomDiceImage())
-        diceImage2.setImageResource(getRandomDiceImage())
+        diceImageId = getRandomDiceImage()
+        diceImageId2 = getRandomDiceImage()
+        diceImage.setImageResource(diceImageId)
+        diceImage2.setImageResource(diceImageId2)
     }
     private fun getRandomDiceImage() : Int {
         val randomInt = (1..6).random()
@@ -42,8 +54,10 @@ class MainActivity : AppCompatActivity() {
     }
 
     private fun reset() {
-        diceImage.setImageResource(R.drawable.empty_dice)
-        diceImage2.setImageResource(R.drawable.empty_dice)
+        diceImageId = R.drawable.empty_dice
+        diceImageId2 = R.drawable.empty_dice
+        diceImage.setImageResource(diceImageId)
+        diceImage2.setImageResource(diceImageId2)
     }
 
 
@@ -60,4 +74,10 @@ class MainActivity : AppCompatActivity() {
         }
     }
     }*/
+    override fun onSaveInstanceState(outState: Bundle) {
+        super.onSaveInstanceState(outState)
+        outState.putInt(KEY_DICE1, diceImageId)
+        outState.putInt(KEY_DICE2, diceImageId2)
+
+    }
     }
