@@ -1,10 +1,8 @@
-# CodeLabs
+# CodeLabs Antiguos
 Se ha realizado los codelabs de https://developer.android.com/courses/kotlin-android-fundamentals/toc.
 
 Para ello se ha utilizado las diferentes ramas para cada apartado, en el caso de main corresponde al 1.1. 
 En el caso del 2.1 se continuó también con el 2.2 debido a que era el mismo proyecto.
-
-CODELABS ANTIGUO
 
 Lección 1: Compila tu primera app
   
@@ -44,6 +42,9 @@ Lección 4: Ciclos de vida de actividades y fragmentos
   4.1 Ciclos de vida y registro
   
   4.2 Situaciones complejas de ciclo de vida
+  
+# CodeLabs Nuevos
+Página: https://developer.android.com/courses/android-basics-kotlin/course
 
 
 
