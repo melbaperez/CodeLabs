@@ -136,4 +136,6 @@ class GameFragment : Fragment() {
         super.onDetach()
         Log.d("GameFragment", "GameFragment destroyed!")
     }
+
+
 }
