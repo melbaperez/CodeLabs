@@ -1,16 +1,18 @@
 package com.example.android.marsphotos.overview
 
-import android.os.Parcel
-import android.os.Parcelable
 import android.view.LayoutInflater
 import android.view.ViewGroup
-import android.widget.ListAdapter
 import androidx.recyclerview.widget.DiffUtil
+import androidx.recyclerview.widget.ListAdapter
 import androidx.recyclerview.widget.RecyclerView
 import com.example.android.marsphotos.databinding.GridViewItemBinding
 import com.example.android.marsphotos.network.MarsPhoto
 
-class PhotoGridAdapter() :
+/**
+ * This class implements a [RecyclerView] [ListAdapter] which uses Data Binding to present [List]
+ * data, including computing diffs between lists.
+ */
+class PhotoGridAdapter :
     ListAdapter<MarsPhoto, PhotoGridAdapter.MarsPhotosViewHolder>(DiffCallback) {
 
     /**
@@ -61,5 +63,4 @@ class PhotoGridAdapter() :
         val marsPhoto = getItem(position)
         holder.bind(marsPhoto)
     }
-
 }
